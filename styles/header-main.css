@@ -1,0 +1,100 @@
+header.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+header.main h1 {
+  color: var(--red);
+  padding: var(--minimargin);
+  font-size: 1.25rem;
+}
+
+header.main nav {
+  order: 2;
+  width: 100%;
+}
+
+header.main picture {
+  padding: var(--minimargin);
+}
+
+header.main nav ul {
+  list-style: none;
+}
+
+header.main nav > ul {
+  display: flex;
+}
+
+header.main nav > ul li span {
+  padding: var(--minimargin);
+  display: block;
+  cursor: pointer;
+}
+
+header.main nav > ul li span::after {
+  content: ">";
+  margin-left: 5px;
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: 0.25s;
+}
+
+header.main nav > ul li.open span::after {
+  transform: rotate(-90deg);
+}
+
+header.main nav > ul li.open span,
+header.main nav > ul li:hover span {
+  background: var(--lightgray);
+}
+
+/* Esto oculta los submenús */
+header.main nav > ul li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: var(--minimargin) 0;
+}
+
+header.main nav > ul li ul li a {
+  color: var(--black);
+  text-decoration: none;
+  display: block;
+  padding: var(--minimargin);
+}
+
+/* Muestra los submenús en los li con class open */
+
+header.main nav > ul li.open ul {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  header.main {
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--smallmargin);
+    padding: 0 var(--minimargin);
+  }
+
+  header.main nav {
+    width: auto;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  header.main h1 {
+    padding: 0;
+  }
+
+  header.main picture {
+    padding: 0;
+  }
+
+  header.main nav > ul li span {
+    padding: var(--smallmargin) var(--minimargin);
+  }
+}

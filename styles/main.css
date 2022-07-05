@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+@import "/styles/header-main.css";
+@import "/styles/section-hero.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --fontsize: 1rem;
+
+  --maxwidth: 1200px;
+
+  --black: #222222;
+  --lightgray: #eeeeee;
+  --red: #fa0f00;
+  --white: #ffffff;
+  --purple: #db327b;
+  --orange: #ee732f;
+
+  --minimargin: 0.5rem;
+  --smallmargin: 1rem;
+  --bigmargin: 2rem;
+  --hugemargin: 4rem;
+}
+
+body {
+  font-family: Ubuntu, sans-serif;
+  min-height: 100vh;
+  font-size: var(--fontsize);
+}
+
+body p {
+  line-height: 175%;
+}
+
+.wrapped {
+  max-width: var(--maxwidth);
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+  border: 2px solid var(--white);
+  padding: var(--minimargin) var(--smallmargin);
+  border-radius: 2rem;
+}

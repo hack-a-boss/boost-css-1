@@ -1,0 +1,18 @@
+section.whatis {
+  background: var(--lightergray);
+  padding: var(--hugemargin) var(--smallmargin);
+}
+
+section.whatis h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+section.whatis h1 em {
+  font-weight: normal;
+}
+
+section.whatis p {
+  text-align: center;
+  margin-bottom: var(--bigmargin);
+}

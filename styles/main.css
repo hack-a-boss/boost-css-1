@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 @import "/styles/header-main.css";
 @import "/styles/section-hero.css";
+@import "/styles/section-fast.css";
+@import "/styles/section-slow.css";
+@import "/styles/section-benefits.css";
+@import "/styles/section-hiw.css";
+@import "/styles/section-whatis.css";
+@import "/styles/section-start.css";
 
 * {
   margin: 0;
@@ -14,11 +20,16 @@ html {
   --maxwidth: 1200px;
 
   --black: #222222;
-  --lightgray: #eeeeee;
+  --lightergray: #eeeeee;
+  --lightgray: #cccccc;
+  --mediumgray: #555555;
+  --darkgray: #333333;
   --red: #fa0f00;
   --white: #ffffff;
   --purple: #db327b;
   --orange: #ee732f;
+
+  --darkshadowcolor: rgba(0, 0, 0, 0.1);
 
   --minimargin: 0.5rem;
   --smallmargin: 1rem;
@@ -30,15 +41,32 @@ body {
   font-family: Ubuntu, sans-serif;
   min-height: 100vh;
   font-size: var(--fontsize);
+  line-height: 175%;
 }
 
-body p {
-  line-height: 175%;
+footer {
+  padding: var(--bigmargin) var(--smallmargin);
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: var(--black);
 }
 
 .wrapped {
   max-width: var(--maxwidth);
   margin: 0 auto;
+}
+
+.sectiontitle {
+  text-align: center;
+  margin-bottom: var(--bigmargin);
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.gradient {
+  background: linear-gradient(90deg, var(--purple), var(--orange));
 }
 
 .button {

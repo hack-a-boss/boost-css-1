@@ -1,0 +1,11 @@
+section.start {
+  text-align: center;
+  color: white;
+  padding: var(--hugemargin) var(--smallmargin);
+}
+
+section.start h1 {
+  font-weight: normal;
+  font-size: 2rem;
+  margin-bottom: var(--bigmargin);
+}

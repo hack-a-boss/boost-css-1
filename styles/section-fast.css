@@ -1,0 +1,46 @@
+section.fast {
+  background: var(--darkgray);
+  color: var(--white);
+  padding: var(--hugemargin) var(--smallmargin);
+}
+
+section.fast ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--smallmargin);
+}
+
+section.fast ul li {
+  background: var(--mediumgray);
+  box-shadow: 0px 0px 5px var(--darkshadowcolor);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+section.fast ul li header {
+  padding: var(--bigmargin) var(--smallmargin);
+  /* order: 2; */
+}
+
+section.fast ul li header h2 {
+  margin-bottom: var(--smallmargin);
+}
+
+section.fast ul li picture img {
+  max-width: 100%;
+}
+
+@media (min-width: 600px) {
+  section.fast ul li {
+    width: calc(50% - var(--smallmargin) / 2);
+  }
+}
+
+@media (min-width: 1000px) {
+  section.fast ul li {
+    width: calc(33% - var(--smallmargin) / 2);
+  }
+}

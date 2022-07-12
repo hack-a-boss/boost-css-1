@@ -1,0 +1,20 @@
+section.benefits {
+  background: var(--lightergray);
+  padding: var(--hugemargin) var(--smallmargin);
+}
+
+section.benefits ul {
+  list-style: none;
+  display: grid;
+  gap: var(--smallmargin);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+section.benefits li {
+  background: var(--lightgray);
+  padding: var(--bigmargin) var(--smallmargin);
+}
+
+section.benefits li h2 {
+  font-size: 1.25rem;
+}

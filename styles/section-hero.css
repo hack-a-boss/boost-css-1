@@ -1,5 +1,4 @@
 section.hero {
-  background: linear-gradient(90deg, var(--purple), var(--orange));
   color: var(--white);
   display: flex;
   flex-direction: column;
